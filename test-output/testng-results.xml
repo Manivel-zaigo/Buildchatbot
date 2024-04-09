@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="8" passed="7" failed="1" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-04-09T18:18:55 IST" name="Default suite" finished-at="2024-04-09T18:21:10 IST" duration-ms="134803">
+    <groups>
+    </groups>
+    <test started-at="2024-04-09T18:18:55 IST" name="Default test" finished-at="2024-04-09T18:21:10 IST" duration-ms="134803">
+      <class name="com.test.Login">
+        <test-method is-config="true" signature="browser_launch()[pri:0, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:18:55 IST" name="browser_launch" finished-at="2024-04-09T18:19:02 IST" duration-ms="6365" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- browser_launch -->
+        <test-method signature="RegisterInvalidEmail()[pri:1, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:19:02 IST" name="RegisterInvalidEmail" finished-at="2024-04-09T18:19:14 IST" duration-ms="12049" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterInvalidEmail -->
+        <test-method signature="RegisterPasswordEmpty()[pri:2, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:19:14 IST" name="RegisterPasswordEmpty" finished-at="2024-04-09T18:19:15 IST" duration-ms="881" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterPasswordEmpty -->
+        <test-method signature="RegisterSuccess()[pri:3, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:19:15 IST" name="RegisterSuccess" finished-at="2024-04-09T18:19:38 IST" duration-ms="23180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- RegisterSuccess -->
+        <test-method signature="LoginInvalidEmail()[pri:4, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:19:38 IST" name="LoginInvalidEmail" finished-at="2024-04-09T18:19:40 IST" duration-ms="1710" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidEmail -->
+        <test-method signature="LoginInvalidcredentials()[pri:5, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:19:40 IST" name="LoginInvalidcredentials" finished-at="2024-04-09T18:20:22 IST" duration-ms="41952" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginInvalidcredentials -->
+        <test-method signature="LoginSuccess()[pri:6, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:20:22 IST" name="LoginSuccess" finished-at="2024-04-09T18:20:28 IST" duration-ms="6337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginSuccess -->
+        <test-method signature="BotEmptyFieldValidation()[pri:7, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:20:28 IST" name="BotEmptyFieldValidation" finished-at="2024-04-09T18:20:29 IST" duration-ms="648" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BotEmptyFieldValidation -->
+        <test-method signature="BotCreateSucess()[pri:8, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:20:29 IST" name="BotCreateSucess" finished-at="2024-04-09T18:21:10 IST" duration-ms="40937" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [Testbots] but found [Testbot]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [Testbots] but found [Testbot]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at org.testng.Assert.assertEquals(Assert.java:666)
+at com.test.Login.BotCreateSucess(Login.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- BotCreateSucess -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.test.Login@15043a2f]" started-at="2024-04-09T18:21:10 IST" name="quit" finished-at="2024-04-09T18:21:10 IST" duration-ms="646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quit -->
+      </class> <!-- com.test.Login -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
