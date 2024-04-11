@@ -10,6 +10,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
@@ -55,7 +56,7 @@ public class Login_Pageclass {
 
 	// Bot creation
 	By botfield = By.xpath("//*[@id='chatName']");
-	By createbotbtn = By.xpath("//*[@id='createbot']");
+	By createbotbtn = By.id("createbot");
 	By emptyfield = By.xpath("//*[text()='Please Enter ChatBot Name.']");
 	By bothome = By.xpath("//*[@id='textInputP']");
 
@@ -67,8 +68,21 @@ public class Login_Pageclass {
 
 	// Click the elements
 	private void click(By element) {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(element)).click();
+		
+//		 Actions actions = new Actions(driver);      
+//	        // Perform the click action using the actions object
+//	        actions.click(element).build().perform();
+	}
+	
+	private void click(WebElement element) {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(40));
+		wait.until(ExpectedConditions.visibilityOf(element));
+		
+		 Actions actions = new Actions(driver);      
+	        // Perform the click action using the actions object
+	        actions.click(element).build().perform();
 	}
 
 	private void EnterText(By element, String value) {
@@ -143,6 +157,7 @@ public class Login_Pageclass {
 		this.EnterText(Email, "joseph@mailinator.com");
 		this.EnterText(Password, "Password@123");
 		this.click(Login);
+		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(Dashboard));
 		String dashboard = driver.findElement(Dashboard).getText();
 		return dashboard;
@@ -167,7 +182,7 @@ public class Login_Pageclass {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
 		this.EnterText(Email, "joseph@mailinator.com");
 		this.EnterText(Password, "Pass");
-		this.click(Login);
+//		this.click(Login);
 
 		boolean condition = false;
 		if (!this.conditionChecking1()) {
@@ -191,6 +206,7 @@ public class Login_Pageclass {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		this.EnterText(botfield, "");
 		this.click(createbotbtn);
+		Thread.sleep(5000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(emptyfield));
 		String botempty = driver.findElement(emptyfield).getText();
 		return botempty;
@@ -200,8 +216,8 @@ public class Login_Pageclass {
 	public String botcreate() throws InterruptedException {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		this.EnterText(botfield, "Testbot");
-		this.click(createbotbtn);
-
+		//this.click(createbotbtn);
+		Thread.sleep(2000);
 		boolean condition = false;
 		if (!this.conditionChecking1()) {
 			do {
@@ -209,7 +225,6 @@ public class Login_Pageclass {
 				if (this.conditionChecking1()) {
 					condition = false;
 				}
-
 			} while (condition);
 		}
 

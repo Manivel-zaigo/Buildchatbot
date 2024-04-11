@@ -6,7 +6,7 @@
       <class name="com.test.Login">
         <methods>
           <include name="quit"/>
-          <include name="BotCreateSucess"/>
+          <include name="BotCreateSuccess"/>
           <include name="browser_launch"/>
         </methods>
       </class> <!-- com.test.Login -->
