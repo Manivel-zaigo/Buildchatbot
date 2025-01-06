@@ -3,13 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.test.Login">
+      <class name="com.test.Botlist">
         <methods>
-          <include name="quit"/>
-          <include name="BotCreateSuccess"/>
           <include name="browser_launch"/>
+          <include name="chatbotspreview"/>
         </methods>
-      </class> <!-- com.test.Login -->
+      </class> <!-- com.test.Botlist -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
