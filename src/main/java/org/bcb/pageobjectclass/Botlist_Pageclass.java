@@ -59,6 +59,23 @@ public class Botlist_Pageclass {
 	By txtcontentfield = By.id("txtcontent");
 	By submitsynctext = By.xpath("//*[@id='submitButton-txtcontent']");
 	
+	//Upload PDF file
+	By pdftab = By.xpath("//*[@id='pdf']");
+	By pdfupload = By.xpath("//div[@id='upload-file-sec']");
+	By pdfcheckbox = By.xpath("//*[@id='files-list-container']/div/div[1]/span[2]");
+	By pdfsyncbtn = By.id("submitButton-pdf");
+//	By syncpdfpopup = By.xpath("//*[@id='toast-container']");
+	
+	
+	//Upload Doc file
+	By doctab = By.xpath("//*[@id='docx']");
+	By docupload = By.xpath("//div[@id='upload-file-sec_doc']");
+	By doccheckbox = By.xpath("//*[@id='files-list-container_doc']/div/div[1]/span[2]");
+	By docsyncbtn = By.xpath("//*[@id='submitButton_doc']");
+//	By syncdocpopup = By.xpath("//*[@id='toast-container']");
+
+	
+	
 	//View synced files status
 	By gosyncstatus = By.xpath("//*[@id='tab6']/div/div[1]/p/a");
 	By txtfilestatus = By.xpath("//*[@id='accordionExample']/div[5]/h2/button/div/div/p");
@@ -158,7 +175,7 @@ public class Botlist_Pageclass {
 				}
 			} while (condition);
 		}
-
+		Thread.sleep(2000);
 		String bothomepage = driver.findElement(bothome).getText();
 		return bothomepage;
 
@@ -178,7 +195,7 @@ public class Botlist_Pageclass {
 		Thread.sleep(3000);
 		this.click(closetipuploads);		
 		Thread.sleep(5000);
-//		this.click(botlist);
+		
 		this.click(txttab);
 		Thread.sleep(2000);
 		
@@ -203,6 +220,11 @@ public class Botlist_Pageclass {
 		actions1.doubleClick(syncbtn).build().perform();
    		wait.until(ExpectedConditions.visibilityOfElementLocated(syncfilepopup));
 		String syncpopup = driver.findElement(syncfilepopup).getText();
+		
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("window.scrollBy(0,-500)");
+        Thread.sleep(3000);
+        
 		return syncpopup;
 		
 	}
@@ -232,10 +254,83 @@ public class Botlist_Pageclass {
 		
 	}
 	
+	
+	public String pdffile() throws InterruptedException, AWTException {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));		
+		Thread.sleep(5000);
+		this.click(pdftab);
+		Thread.sleep(2000);
+		
+        // Set the file path to be uploaded
+		this.click(pdfupload);
+		Thread.sleep(2000);
+        String PDFPath = "C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\upload_pdf\\Beginner-Guide-To-Software-Testing.pdf";
+        Botlist_Pageclass.attachmentFile(PDFPath);
+        Thread.sleep(5000);
+        
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,600)");
+        Thread.sleep(5000);
+        
+		this.click(pdfcheckbox);
+        Thread.sleep(3000);
+        WebElement syncbtn = wait.until(ExpectedConditions.visibilityOfElementLocated(pdfsyncbtn));
+        Actions actions1 = new Actions(driver);
+		actions1.doubleClick(syncbtn).build().perform();
+   		wait.until(ExpectedConditions.visibilityOfElementLocated(syncfilepopup));
+		String syncpopup = driver.findElement(syncfilepopup).getText();
+		
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("window.scrollBy(0,-500)");
+        Thread.sleep(3000);
+		
+		return syncpopup;
+		
+	}
+	
+	
+	public String docfile() throws InterruptedException, AWTException {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));		
+		Thread.sleep(5000);
+		this.click(doctab);
+		Thread.sleep(2000);
+		
+        // Set the file path to be uploaded
+		this.click(docupload);
+		Thread.sleep(2000);
+        String DOCPath = "C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\upload_pdf\\Testing Activities.docx";
+        Botlist_Pageclass.attachmentFile(DOCPath);
+        Thread.sleep(5000);
+        
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+        js.executeScript("window.scrollBy(0,600)");
+        Thread.sleep(5000);
+        
+		this.click(doccheckbox);
+        Thread.sleep(3000);
+        this.click(docsyncbtn);
+//        WebElement syncbtn = wait.until(ExpectedConditions.visibilityOfElementLocated(docsyncbtn));
+//        Actions actions1 = new Actions(driver);
+//		actions1.doubleClick(syncbtn).build().perform();
+   		wait.until(ExpectedConditions.visibilityOfElementLocated(syncfilepopup));
+		String syncpopup = driver.findElement(syncfilepopup).getText();
+		
+		JavascriptExecutor js1 = (JavascriptExecutor) driver;
+        js1.executeScript("window.scrollBy(0,-500)");
+        Thread.sleep(3000);
+		
+		return syncpopup;
+		
+	}
+	
+	
+	
 	public String chatbotpreview() throws InterruptedException {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
 		Thread.sleep(2000);
 		this.click(chatbotpreviewtab);
+		Thread.sleep(5000);
+
 		this.EnterText(questionfield, "What is community");
 		Thread.sleep(3000);
 		this.click(questionsendbtn);

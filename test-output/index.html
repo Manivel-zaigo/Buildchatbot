@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">16 methods, 1 failed,   15 passed</span>
+                    <span class="method-stats">18 methods, 1 failed,   17 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="RegisterSuccess">RegisterSuccess</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="chatbotspreview">chatbotspreview</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -117,12 +117,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="BotCreateSuccess">BotCreateSuccess</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="BotCreateSuccess">BotCreateSuccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="BotCreateSuccess">BotCreateSuccess</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="BotCreateSuccess">BotCreateSuccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -177,7 +177,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="chatbotspreview">chatbotspreview</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="RegisterSuccess">RegisterSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="docfilesync">docfilesync</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="pdffilesync">pdffilesync</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -205,23 +215,92 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.test.Login</span>
+              <span class="class-name">com.test.Botlist</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="RegisterSuccess">
-                  </a> <!-- RegisterSuccess -->
-                  <span class="method-name">RegisterSuccess</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.test.Login.RegisterSuccess(Login.java:124)
+                  <a name="chatbotspreview">
+                  </a> <!-- chatbotspreview -->
+                  <span class="method-name">chatbotspreview</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;menuli chatbotpreview&quot; href=&quot;https://buildchatbot.ai/chatbots/preview&quot;&gt;...&lt;/a&gt; is not clickable at point (488, 10). Other element would receive the click: &lt;a class=&quot;nav-link&quot; href=&quot;https://buildchatbot.ai/integrations&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=133.0.6943.59)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2cf740f5853c082c557c2afda489c6ce, clickElement {id=f.6D3CA618F8F066A27563827ADD7DBCF0.d.9EFC95C0ED511BDDAB4B263987AAD4BA.e.3614}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60041/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2cf740f5853c082c557c2afda489c6ce)] -&gt; xpath: //*[@id=&apos;page&apos;]/section/div[2]/div/div/div/div/div[1]/ul/li[2]/a]
+Session ID: 2cf740f5853c082c557c2afda489c6ce
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.click(Botlist_Pageclass.java:101)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.chatbotpreview(Botlist_Pageclass.java:331)
+	at com.test.Botlist.chatbotspreview(Botlist.java:223)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames
+... Removed 32 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.Botlist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BotCreateSuccess">
+                  </a> <!-- BotCreateSuccess -->
+                  <span class="method-name">BotCreateSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginSuccess">
+                  </a> <!-- LoginSuccess -->
+                  <span class="method-name">LoginSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="docfilesync">
+                  </a> <!-- docfilesync -->
+                  <span class="method-name">docfilesync</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="pdffilesync">
+                  </a> <!-- pdffilesync -->
+                  <span class="method-name">pdffilesync</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="txtcontentfilesync">
+                  </a> <!-- txtcontentfilesync -->
+                  <span class="method-name">txtcontentfilesync</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="txtfilesync">
+                  </a> <!-- txtfilesync -->
+                  <span class="method-name">txtfilesync</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -298,47 +377,11 @@
                   <span class="method-name">RegisterPasswordEmpty</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
-          <div class="suite-Suite-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.test.Botlist</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="BotCreateSuccess">
-                  </a> <!-- BotCreateSuccess -->
-                  <span class="method-name">BotCreateSuccess</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="LoginSuccess">
-                  </a> <!-- LoginSuccess -->
-                  <span class="method-name">LoginSuccess</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="chatbotspreview">
-                  </a> <!-- chatbotspreview -->
-                  <span class="method-name">chatbotspreview</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="txtcontentfilesync">
-                  </a> <!-- txtcontentfilesync -->
-                  <span class="method-name">txtcontentfilesync</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="txtfilesync">
-                  </a> <!-- txtfilesync -->
-                  <span class="method-name">txtfilesync</span>
+                  <a name="RegisterSuccess">
+                  </a> <!-- RegisterSuccess -->
+                  <span class="method-name">RegisterSuccess</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -396,76 +439,84 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(16);
+data.addRows(18);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'BotUpdateSuccess')
 data.setCell(0, 2, 'com.test.Login')
-data.setCell(0, 3, 42817);
+data.setCell(0, 3, 43039);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'BotCreateSuccess')
 data.setCell(1, 2, 'com.test.Login')
-data.setCell(1, 3, 42353);
+data.setCell(1, 3, 42915);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'LoginInvalidcredentials')
 data.setCell(2, 2, 'com.test.Login')
-data.setCell(2, 3, 41439);
+data.setCell(2, 3, 40880);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'RegisterSuccess')
-data.setCell(3, 2, 'com.test.Login')
-data.setCell(3, 3, 41309);
+data.setCell(3, 1, 'BotCreateSuccess')
+data.setCell(3, 2, 'com.test.Botlist')
+data.setCell(3, 3, 32401);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'BotCreateSuccess')
+data.setCell(4, 1, 'txtfilesync')
 data.setCell(4, 2, 'com.test.Botlist')
-data.setCell(4, 3, 30320);
+data.setCell(4, 3, 30676);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'txtfilesync')
+data.setCell(5, 1, 'pdffilesync')
 data.setCell(5, 2, 'com.test.Botlist')
-data.setCell(5, 3, 28150);
+data.setCell(5, 3, 30273);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'txtcontentfilesync')
+data.setCell(6, 1, 'docfilesync')
 data.setCell(6, 2, 'com.test.Botlist')
-data.setCell(6, 3, 17591);
+data.setCell(6, 3, 25894);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'chatbotspreview')
-data.setCell(7, 2, 'com.test.Botlist')
-data.setCell(7, 3, 12534);
+data.setCell(7, 1, 'RegisterSuccess')
+data.setCell(7, 2, 'com.test.Login')
+data.setCell(7, 3, 25808);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'BotEmptyFieldValidation')
-data.setCell(8, 2, 'com.test.Login')
-data.setCell(8, 3, 9325);
+data.setCell(8, 1, 'txtcontentfilesync')
+data.setCell(8, 2, 'com.test.Botlist')
+data.setCell(8, 3, 17462);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'BotUpdateEmptyValidation')
-data.setCell(9, 2, 'com.test.Login')
-data.setCell(9, 3, 7416);
+data.setCell(9, 1, 'LoginSuccess')
+data.setCell(9, 2, 'com.test.Botlist')
+data.setCell(9, 3, 9761);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'LoginSuccess')
-data.setCell(10, 2, 'com.test.Botlist')
-data.setCell(10, 3, 6079);
+data.setCell(10, 1, 'BotEmptyFieldValidation')
+data.setCell(10, 2, 'com.test.Login')
+data.setCell(10, 3, 9295);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'LoginSuccess')
+data.setCell(11, 1, 'BotUpdateEmptyValidation')
 data.setCell(11, 2, 'com.test.Login')
-data.setCell(11, 3, 5661);
+data.setCell(11, 3, 7377);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'Botdelete')
+data.setCell(12, 1, 'LoginSuccess')
 data.setCell(12, 2, 'com.test.Login')
-data.setCell(12, 3, 3743);
+data.setCell(12, 3, 5467);
 data.setCell(13, 0, 13)
-data.setCell(13, 1, 'RegisterInvalidEmail')
+data.setCell(13, 1, 'Botdelete')
 data.setCell(13, 2, 'com.test.Login')
-data.setCell(13, 3, 3211);
+data.setCell(13, 3, 3802);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'LoginInvalidEmail')
+data.setCell(14, 1, 'RegisterInvalidEmail')
 data.setCell(14, 2, 'com.test.Login')
-data.setCell(14, 3, 2250);
+data.setCell(14, 3, 3288);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'RegisterPasswordEmpty')
-data.setCell(15, 2, 'com.test.Login')
-data.setCell(15, 3, 1555);
+data.setCell(15, 1, 'chatbotspreview')
+data.setCell(15, 2, 'com.test.Botlist')
+data.setCell(15, 3, 3132);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'LoginInvalidEmail')
+data.setCell(16, 2, 'com.test.Login')
+data.setCell(16, 3, 1972);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'RegisterPasswordEmpty')
+data.setCell(17, 2, 'com.test.Login')
+data.setCell(17, 3, 1508);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 4 minutes</span>
+              <span class="suite-total-time">Total running time: 5 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -498,84 +549,92 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">RegisterInvalidEmail</span>
-                <span class="method-start">25619 ms</span>
+                <span class="method-start">21765 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RegisterPasswordEmpty</span>
-                <span class="method-start">28836 ms</span>
+                <span class="method-start">25056 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">RegisterSuccess</span>
-                <span class="method-start">30392 ms</span>
+                <span class="method-start">26565 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginInvalidEmail</span>
-                <span class="method-start">71704 ms</span>
+                <span class="method-start">52374 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginInvalidcredentials</span>
-                <span class="method-start">73955 ms</span>
+                <span class="method-start">54348 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginSuccess</span>
-                <span class="method-start">115395 ms</span>
+                <span class="method-start">95230 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BotEmptyFieldValidation</span>
-                <span class="method-start">121059 ms</span>
+                <span class="method-start">100698 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BotCreateSuccess</span>
-                <span class="method-start">130385 ms</span>
+                <span class="method-start">109994 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BotUpdateEmptyValidation</span>
-                <span class="method-start">172739 ms</span>
+                <span class="method-start">152910 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BotUpdateSuccess</span>
-                <span class="method-start">180156 ms</span>
+                <span class="method-start">160288 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">Botdelete</span>
-                <span class="method-start">222975 ms</span>
+                <span class="method-start">203328 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quit</span>
-                <span class="method-start">226719 ms</span>
+                <span class="method-start">207132 ms</span>
               </div> <!-- configuration-class after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.test.Botlist</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">browser_launch</span>
-                <span class="method-start">227869 ms</span>
+                <span class="method-start">209351 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">LoginSuccess</span>
-                <span class="method-start">237000 ms</span>
+                <span class="method-start">217801 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BotCreateSuccess</span>
-                <span class="method-start">243081 ms</span>
+                <span class="method-start">227563 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">txtfilesync</span>
-                <span class="method-start">273402 ms</span>
+                <span class="method-start">259965 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">txtcontentfilesync</span>
-                <span class="method-start">301554 ms</span>
+                <span class="method-start">290645 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">pdffilesync</span>
+                <span class="method-start">308108 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">docfilesync</span>
+                <span class="method-start">338385 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">chatbotspreview</span>
-                <span class="method-start">319149 ms</span>
+                <span class="method-start">364281 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quit</span>
-                <span class="method-start">331684 ms</span>
+                <span class="method-start">367417 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

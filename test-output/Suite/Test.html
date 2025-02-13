@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>15/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>17/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Jan 06 18:06:50 IST 2025</td>
+<td>Started on:</td><td>Thu Feb 13 14:22:51 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>333 seconds (333371 ms)</td>
+<tr><td>Total time:</td><td>368 seconds (368706 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,17 +76,56 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.Login.RegisterSuccess()'><b>RegisterSuccess</b><br>Test class: com.test.Login</td>
-<td><div><pre>java.lang.AssertionError: expected [true] but found [false]
-	at com.test.Login.RegisterSuccess(Login.java:124)
+<td title='com.test.Botlist.chatbotspreview()'><b>chatbotspreview</b><br>Test class: com.test.Botlist</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;menuli chatbotpreview&quot; href=&quot;https://buildchatbot.ai/chatbots/preview&quot;&gt;...&lt;/a&gt; is not clickable at point (488, 10). Other element would receive the click: &lt;a class=&quot;nav-link&quot; href=&quot;https://buildchatbot.ai/integrations&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=133.0.6943.59)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2cf740f5853c082c557c2afda489c6ce, clickElement {id=f.6D3CA618F8F066A27563827ADD7DBCF0.d.9EFC95C0ED511BDDAB4B263987AAD4BA.e.3614}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60041/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2cf740f5853c082c557c2afda489c6ce)] -&gt; xpath: //*[@id=&apos;page&apos;]/section/div[2]/div/div/div/div/div[1]/ul/li[2]/a]
+Session ID: 2cf740f5853c082c557c2afda489c6ce
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.click(Botlist_Pageclass.java:101)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.chatbotpreview(Botlist_Pageclass.java:331)
+	at com.test.Botlist.chatbotspreview(Botlist.java:223)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace8633103", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace8633103'><pre>java.lang.AssertionError: expected [true] but found [false]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1578)
-	at org.testng.Assert.assertTrue(Assert.java:57)
-	at org.testng.Assert.assertTrue(Assert.java:67)
-	at com.test.Login.RegisterSuccess(Login.java:124)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1097699568", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1097699568'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;menuli chatbotpreview&quot; href=&quot;https://buildchatbot.ai/chatbots/preview&quot;&gt;...&lt;/a&gt; is not clickable at point (488, 10). Other element would receive the click: &lt;a class=&quot;nav-link&quot; href=&quot;https://buildchatbot.ai/integrations&quot;&gt;...&lt;/a&gt;
+  (Session info: chrome=133.0.6943.59)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [2cf740f5853c082c557c2afda489c6ce, clickElement {id=f.6D3CA618F8F066A27563827ADD7DBCF0.d.9EFC95C0ED511BDDAB4B263987AAD4BA.e.3614}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60041/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (2cf740f5853c082c557c2afda489c6ce)] -&gt; xpath: //*[@id=&apos;page&apos;]/section/div[2]/div/div/div/div/div[1]/ul/li[2]/a]
+Session ID: 2cf740f5853c082c557c2afda489c6ce
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.click(Botlist_Pageclass.java:101)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.chatbotpreview(Botlist_Pageclass.java:331)
+	at com.test.Botlist.chatbotspreview(Botlist.java:223)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -116,8 +155,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>41</td>
-<td>com.test.Login@53fb3dab</td></tr>
+<td>3</td>
+<td>com.test.Botlist@17f9d882</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -128,14 +167,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.Botlist.LoginSuccess()'><b>LoginSuccess</b><br>Test class: com.test.Botlist</td>
+<td title='com.test.Login.RegisterInvalidEmail()'><b>RegisterInvalidEmail</b><br>Test class: com.test.Login</td>
 <td></td>
-<td>6</td>
+<td>3</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Botlist.txtfilesync()'><b>txtfilesync</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>30</td>
 <td>com.test.Botlist@17f9d882</td></tr>
 <tr>
-<td title='com.test.Botlist.chatbotspreview()'><b>chatbotspreview</b><br>Test class: com.test.Botlist</td>
+<td title='com.test.Botlist.LoginSuccess()'><b>LoginSuccess</b><br>Test class: com.test.Botlist</td>
 <td></td>
-<td>12</td>
+<td>9</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Botlist.txtcontentfilesync()'><b>txtcontentfilesync</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>17</td>
 <td>com.test.Botlist@17f9d882</td></tr>
 <tr>
 <td title='com.test.Login.LoginSuccess()'><b>LoginSuccess</b><br>Test class: com.test.Login</td>
@@ -143,19 +192,14 @@ function toggleAllBoxes() {
 <td>5</td>
 <td>com.test.Login@53fb3dab</td></tr>
 <tr>
-<td title='com.test.Botlist.txtfilesync()'><b>txtfilesync</b><br>Test class: com.test.Botlist</td>
+<td title='com.test.Login.RegisterSuccess()'><b>RegisterSuccess</b><br>Test class: com.test.Login</td>
 <td></td>
-<td>28</td>
-<td>com.test.Botlist@17f9d882</td></tr>
-<tr>
-<td title='com.test.Login.LoginInvalidcredentials()'><b>LoginInvalidcredentials</b><br>Test class: com.test.Login</td>
-<td></td>
-<td>41</td>
+<td>25</td>
 <td>com.test.Login@53fb3dab</td></tr>
 <tr>
-<td title='com.test.Login.RegisterInvalidEmail()'><b>RegisterInvalidEmail</b><br>Test class: com.test.Login</td>
+<td title='com.test.Login.BotEmptyFieldValidation()'><b>BotEmptyFieldValidation</b><br>Test class: com.test.Login</td>
 <td></td>
-<td>3</td>
+<td>9</td>
 <td>com.test.Login@53fb3dab</td></tr>
 <tr>
 <td title='com.test.Login.BotUpdateEmptyValidation()'><b>BotUpdateEmptyValidation</b><br>Test class: com.test.Login</td>
@@ -163,14 +207,34 @@ function toggleAllBoxes() {
 <td>7</td>
 <td>com.test.Login@53fb3dab</td></tr>
 <tr>
+<td title='com.test.Login.RegisterPasswordEmpty()'><b>RegisterPasswordEmpty</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>1</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Botlist.docfilesync()'><b>docfilesync</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>25</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Botlist.BotCreateSuccess()'><b>BotCreateSuccess</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>32</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
 <td title='com.test.Login.LoginInvalidEmail()'><b>LoginInvalidEmail</b><br>Test class: com.test.Login</td>
 <td></td>
-<td>2</td>
+<td>1</td>
 <td>com.test.Login@53fb3dab</td></tr>
 <tr>
 <td title='com.test.Login.BotCreateSuccess()'><b>BotCreateSuccess</b><br>Test class: com.test.Login</td>
 <td></td>
 <td>42</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.LoginInvalidcredentials()'><b>LoginInvalidcredentials</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>40</td>
 <td>com.test.Login@53fb3dab</td></tr>
 <tr>
 <td title='com.test.Login.Botdelete()'><b>Botdelete</b><br>Test class: com.test.Login</td>
@@ -180,25 +244,10 @@ function toggleAllBoxes() {
 <tr>
 <td title='com.test.Login.BotUpdateSuccess()'><b>BotUpdateSuccess</b><br>Test class: com.test.Login</td>
 <td></td>
-<td>42</td>
+<td>43</td>
 <td>com.test.Login@53fb3dab</td></tr>
 <tr>
-<td title='com.test.Botlist.txtcontentfilesync()'><b>txtcontentfilesync</b><br>Test class: com.test.Botlist</td>
-<td></td>
-<td>17</td>
-<td>com.test.Botlist@17f9d882</td></tr>
-<tr>
-<td title='com.test.Login.BotEmptyFieldValidation()'><b>BotEmptyFieldValidation</b><br>Test class: com.test.Login</td>
-<td></td>
-<td>9</td>
-<td>com.test.Login@53fb3dab</td></tr>
-<tr>
-<td title='com.test.Login.RegisterPasswordEmpty()'><b>RegisterPasswordEmpty</b><br>Test class: com.test.Login</td>
-<td></td>
-<td>1</td>
-<td>com.test.Login@53fb3dab</td></tr>
-<tr>
-<td title='com.test.Botlist.BotCreateSuccess()'><b>BotCreateSuccess</b><br>Test class: com.test.Botlist</td>
+<td title='com.test.Botlist.pdffilesync()'><b>pdffilesync</b><br>Test class: com.test.Botlist</td>
 <td></td>
 <td>30</td>
 <td>com.test.Botlist@17f9d882</td></tr>
