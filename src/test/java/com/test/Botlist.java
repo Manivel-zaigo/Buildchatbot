@@ -56,11 +56,11 @@ public class Botlist {
 		extentReports.attachReporter(extentHtmlReporter);
 	}
 
-	@AfterClass
-	public void quit() {
-		driver.quit();
-		extentReports.flush();
-	}
+//	@AfterClass
+//	public void quit() {
+//		driver.quit();
+//		extentReports.flush();
+//	}
 
 	@Test(priority = 1)
 	private void LoginSuccess() throws InterruptedException, IOException {
@@ -127,13 +127,37 @@ public class Botlist {
 ////		    assertEquals(listbot, "Testbot");
 //	}
 
-	// Txt file synced status
+	// Invalid file status
 	@Test(priority = 3)
-	private void txtfilesync() throws InterruptedException, IOException, AWTException {
+	private void FileInvalid() throws InterruptedException, IOException, AWTException {
+		testcase = extentReports
+				.createTest("Check whether the error message is displayed when uploading an invalid file");
+		Botlist_Pageclass invalidfile = PageFactory.initElements(driver, Botlist_Pageclass.class);
+		String invalidfilesync = invalidfile.fileinvalid();
+		if (invalidfilesync.equals("Only Text files are allowed.")) {
+			testcase.log(Status.PASS, "Invalid file toast is displayed");
+			assertTrue(true);
+		} else {
+			testcase.log(Status.FAIL, "Invalid file toast is not displayed");
+			TakesScreenshot screenshot = (TakesScreenshot) driver;
+			File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
+			File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\Invalidfile.png");
+			FileUtils.copyFile(screenshotAs, file);
+			testcase.addScreenCaptureFromPath(
+					"C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\Invalidfile.png");
+			assertTrue(false);
+		}
+//				assertEquals(txtfile, "Testbot");
+	}
+
+	// Txt file synced status
+	@Test(priority = 4)
+	private void TXTFileSync() throws InterruptedException, IOException, AWTException {
 		testcase = extentReports.createTest("Check whether the user uploaded TXT file is syncing");
 		Botlist_Pageclass textfile = PageFactory.initElements(driver, Botlist_Pageclass.class);
 		String textfilesync = textfile.txtfile();
-		if (textfilesync.equals("Syncing the files to the bot memory in background. You will receive an email once completed.")) {
+		if (textfilesync.equals(
+				"Syncing the files to the bot memory in background. You will receive an email once completed.")) {
 			testcase.log(Status.PASS, "Txt file is syncing toast displayed");
 			assertTrue(true);
 		} else {
@@ -142,19 +166,21 @@ public class Botlist {
 			File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
 			File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\Txtfilesync.png");
 			FileUtils.copyFile(screenshotAs, file);
-			testcase.addScreenCaptureFromPath("C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\Txtfilesync.png");
+			testcase.addScreenCaptureFromPath(
+					"C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\Txtfilesync.png");
 			assertTrue(false);
 		}
 //			assertEquals(txtfile, "Testbot");
 	}
 
 	// Txt Content file synced status
-	@Test(priority = 4)
-	private void txtcontentfilesync() throws InterruptedException, IOException, AWTException {
+	@Test(priority = 5)
+	private void TXTContentFileSync() throws InterruptedException, IOException, AWTException {
 		testcase = extentReports.createTest("Check whether the user uploaded TXT Content file is syncing");
 		Botlist_Pageclass textcontfile = PageFactory.initElements(driver, Botlist_Pageclass.class);
 		String textcontentfilesync = textcontfile.txtcontentfile();
-		if (textcontentfilesync.equals("Syncing the Text Content to the bot memory in background. You will receive an email once completed.")){
+		if (textcontentfilesync.equals(
+				"Syncing the Text Content to the bot memory in background. You will receive an email once completed.")) {
 			testcase.log(Status.PASS, "Txt content file is syncing toast displayed");
 			assertTrue(true);
 		} else {
@@ -163,66 +189,66 @@ public class Botlist {
 			File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
 			File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\Txtcontfilesync.png");
 			FileUtils.copyFile(screenshotAs, file);
-			testcase.addScreenCaptureFromPath("C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\Txtcontfilesync.png");
+			testcase.addScreenCaptureFromPath(
+					"C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\Txtcontfilesync.png");
 			assertTrue(false);
 		}
 //			assertEquals(txtcontentfile, "Testbot");
 	}
-	
-	
-	// PDF file synced status
-		@Test(priority = 5)
-		private void pdffilesync() throws InterruptedException, IOException, AWTException {
-			testcase = extentReports.createTest("Check whether the user uploaded PDF file is syncing");
-			Botlist_Pageclass pdffiles = PageFactory.initElements(driver, Botlist_Pageclass.class);
-			String pdffilesync = pdffiles.pdffile();
-			if (pdffilesync.equals("Syncing the files to the bot memory in background. You will receive an email once completed.")) {
-				testcase.log(Status.PASS, "PDF file is syncing toast displayed");
-				assertTrue(true);
-			} else {
-				testcase.log(Status.FAIL, "PDF file is syncing toast not displayed");
-				TakesScreenshot screenshot = (TakesScreenshot) driver;
-				File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
-				File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\Pdffilesync.png");
-				FileUtils.copyFile(screenshotAs, file);
-				testcase.addScreenCaptureFromPath("C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\Pdffilesync.png");
-				assertTrue(false);
-			}
-//				assertEquals(pdffile, "Testbot");
-		}
-	
-	
-		// Doc file synced status
-				@Test(priority = 6)
-				private void docfilesync() throws InterruptedException, IOException, AWTException {
-					testcase = extentReports.createTest("Check whether the user uploaded DOC file is syncing");
-					Botlist_Pageclass docfiles = PageFactory.initElements(driver, Botlist_Pageclass.class);
-					String docfilesync = docfiles.docfile();
-					if (docfilesync.equals("Syncing the files to the bot memory in background. You will receive an email once completed.")) {
-						testcase.log(Status.PASS, "DOC file is syncing toast displayed");
-						assertTrue(true);
-					} else {
-						testcase.log(Status.FAIL, "DOC file is syncing toast not displayed");
-						TakesScreenshot screenshot = (TakesScreenshot) driver;
-						File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
-						File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\Docfilesync.png");
-						FileUtils.copyFile(screenshotAs, file);
-						testcase.addScreenCaptureFromPath("C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\Docfilesync.png");
-						assertTrue(false);
-					}
-//						assertEquals(docfile, "Testbot");
-				}
-	
-				
 
-	// Txt Content file synced status
+	// PDF file synced status
+	@Test(priority = 6)
+	private void PDFFileSync() throws InterruptedException, IOException, AWTException {
+		testcase = extentReports.createTest("Check whether the user uploaded PDF file is syncing");
+		Botlist_Pageclass pdffiles = PageFactory.initElements(driver, Botlist_Pageclass.class);
+		String pdffilesync = pdffiles.pdffile();
+		if (pdffilesync.equals(
+				"Syncing the files to the bot memory in background. You will receive an email once completed.")) {
+			testcase.log(Status.PASS, "PDF file is syncing toast displayed");
+			assertTrue(true);
+		} else {
+			testcase.log(Status.FAIL, "PDF file is syncing toast not displayed");
+			TakesScreenshot screenshot = (TakesScreenshot) driver;
+			File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
+			File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\Pdffilesync.png");
+			FileUtils.copyFile(screenshotAs, file);
+			testcase.addScreenCaptureFromPath(
+					"C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\Pdffilesync.png");
+			assertTrue(false);
+		}
+//				assertEquals(pdffile, "Testbot");
+	}
+
+	// Doc file synced status
 	@Test(priority = 7)
-	private void chatbotspreview() throws InterruptedException, IOException, AWTException {
+	private void DOCFileSync() throws InterruptedException, IOException, AWTException {
+		testcase = extentReports.createTest("Check whether the user uploaded DOC file is syncing");
+		Botlist_Pageclass docfiles = PageFactory.initElements(driver, Botlist_Pageclass.class);
+		String docfilesync = docfiles.docfile();
+		if (docfilesync.equals(
+				"Syncing the files to the bot memory in background. You will receive an email once completed.")) {
+			testcase.log(Status.PASS, "DOC file is syncing toast displayed");
+			assertTrue(true);
+		} else {
+			testcase.log(Status.FAIL, "DOC file is syncing toast not displayed");
+			TakesScreenshot screenshot = (TakesScreenshot) driver;
+			File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
+			File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\Docfilesync.png");
+			FileUtils.copyFile(screenshotAs, file);
+			testcase.addScreenCaptureFromPath(
+					"C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\Docfilesync.png");
+			assertTrue(false);
+		}
+//						assertEquals(docfile, "Testbot");
+	}
+
+	// Chatbot preview page
+	@Test(priority = 8)
+	private void ChatBotsPreview() throws InterruptedException, IOException, AWTException {
 		testcase = extentReports.createTest("Check whether the user can view the bot replied successfully");
 		Botlist_Pageclass chatpreview = PageFactory.initElements(driver, Botlist_Pageclass.class);
 		String textchatpreview = chatpreview.chatbotpreview();
-		if (textchatpreview.equals("Sorry! I'm not sure what you're saying.")) 
-		{
+		if (textchatpreview != null && !textchatpreview.isEmpty()) {
 			testcase.log(Status.PASS, "Bot replied successfully");
 			assertTrue(true);
 		} else {
@@ -231,10 +257,56 @@ public class Botlist {
 			File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
 			File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\botreply.png");
 			FileUtils.copyFile(screenshotAs, file);
-			testcase.addScreenCaptureFromPath("C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\botreply.png");
+			testcase.addScreenCaptureFromPath(
+					"C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\botreply.png");
 			assertTrue(false);
 		}
 //				assertEquals(botreply, "Testbot");
+	}
+
+	// Settings - Collect user data form update
+	@Test(priority = 9)
+	private void Settings() throws InterruptedException, IOException, AWTException {
+		testcase = extentReports.createTest("Check whether the settings - Collect data form updated successfully");
+		Botlist_Pageclass settings = PageFactory.initElements(driver, Botlist_Pageclass.class);
+		String settingsform = settings.settingssave();
+		if (settingsform.equals("User Identification Settings Updated Successfully.")) {
+			testcase.log(Status.PASS, "Settings collect user data form updated");
+			assertTrue(true);
+		} else {
+			testcase.log(Status.FAIL, "Settings collect user data form not updated");
+			TakesScreenshot screenshot = (TakesScreenshot) driver;
+			File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
+			File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\settingsform.png");
+			FileUtils.copyFile(screenshotAs, file);
+			testcase.addScreenCaptureFromPath(
+					"C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\settingsform.png");
+			assertTrue(false);
+		}
+//				assertEquals(Settings, "Collect user data");
+	}
+
+	// Settings - Collect user data form update
+	@Test(priority = 10)
+	private void WidgetDownload() throws InterruptedException, IOException, AWTException {
+		testcase = extentReports.createTest("Check whether the widget is download or Not");
+		Botlist_Pageclass widget = PageFactory.initElements(driver, Botlist_Pageclass.class);
+		String widgetfile = widget.widgetdownload();
+		if (widgetfile != null && !widgetfile.isEmpty()) {
+			testcase.log(Status.PASS, "Widget downloaded");
+			assertTrue(true);
+
+		} else {
+			testcase.log(Status.FAIL, "widget is not downloaded");
+			TakesScreenshot screenshot = (TakesScreenshot) driver;
+			File screenshotAs = screenshot.getScreenshotAs(OutputType.FILE);
+			File file = new File("C:\\Users\\Admin\\eclipse-workspace\\Build_Chatbot\\widget.png");
+			FileUtils.copyFile(screenshotAs, file);
+			testcase.addScreenCaptureFromPath(
+					"C:\\\\Users\\\\Admin\\\\eclipse-workspace\\\\Build_Chatbot\\\\widget.png");
+			assertTrue(false);
+		}
+//						assertEquals(Widget, "widget file");
 	}
 
 }

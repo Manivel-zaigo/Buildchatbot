@@ -6,7 +6,7 @@
       <class name="com.test.Botlist">
         <methods>
           <include name="browser_launch"/>
-          <include name="chatbotspreview"/>
+          <include name="WidgetDownload"/>
         </methods>
       </class> <!-- com.test.Botlist -->
     </classes>

@@ -1,63 +1,71 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="17" failed="1" skipped="0">
+<testng-results ignored="0" total="21" passed="20" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-02-13T14:22:51 IST" name="Suite" finished-at="2025-02-13T14:29:00 IST" duration-ms="368706">
+  <suite started-at="2025-06-05T19:05:06 IST" name="Suite" finished-at="2025-06-05T19:12:45 IST" duration-ms="458912">
     <groups>
     </groups>
-    <test started-at="2025-02-13T14:22:51 IST" name="Test" finished-at="2025-02-13T14:29:00 IST" duration-ms="368706">
+    <test started-at="2025-06-05T19:05:06 IST" name="Test" finished-at="2025-06-05T19:12:45 IST" duration-ms="458912">
       <class name="com.test.Botlist">
-        <test-method is-config="true" signature="browser_launch()[pri:0, instance:com.test.Botlist@17f9d882]" started-at="2025-02-13T14:26:21 IST" name="browser_launch" finished-at="2025-02-13T14:26:29 IST" duration-ms="8449" status="PASS">
+        <test-method is-config="true" signature="browser_launch()[pri:0, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:08:52 IST" name="browser_launch" finished-at="2025-06-05T19:09:17 IST" duration-ms="25325" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_launch -->
-        <test-method signature="LoginSuccess()[pri:1, instance:com.test.Botlist@17f9d882]" started-at="2025-02-13T14:26:29 IST" name="LoginSuccess" finished-at="2025-02-13T14:26:39 IST" duration-ms="9761" status="PASS">
+        <test-method signature="LoginSuccess()[pri:1, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:09:17 IST" name="LoginSuccess" finished-at="2025-06-05T19:09:24 IST" duration-ms="7156" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginSuccess -->
-        <test-method signature="BotCreateSuccess()[pri:2, instance:com.test.Botlist@17f9d882]" started-at="2025-02-13T14:26:39 IST" name="BotCreateSuccess" finished-at="2025-02-13T14:27:11 IST" duration-ms="32401" status="PASS">
+        <test-method signature="BotCreateSuccess()[pri:2, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:09:24 IST" name="BotCreateSuccess" finished-at="2025-06-05T19:10:06 IST" duration-ms="41473" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BotCreateSuccess -->
-        <test-method signature="txtfilesync()[pri:3, instance:com.test.Botlist@17f9d882]" started-at="2025-02-13T14:27:11 IST" name="txtfilesync" finished-at="2025-02-13T14:27:42 IST" duration-ms="30676" status="PASS">
+        <test-method signature="FileInvalid()[pri:3, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:10:06 IST" name="FileInvalid" finished-at="2025-06-05T19:10:24 IST" duration-ms="17803" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- txtfilesync -->
-        <test-method signature="txtcontentfilesync()[pri:4, instance:com.test.Botlist@17f9d882]" started-at="2025-02-13T14:27:42 IST" name="txtcontentfilesync" finished-at="2025-02-13T14:28:00 IST" duration-ms="17462" status="PASS">
+        </test-method> <!-- FileInvalid -->
+        <test-method signature="TXTFileSync()[pri:4, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:10:24 IST" name="TXTFileSync" finished-at="2025-06-05T19:10:44 IST" duration-ms="19953" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- txtcontentfilesync -->
-        <test-method signature="pdffilesync()[pri:5, instance:com.test.Botlist@17f9d882]" started-at="2025-02-13T14:28:00 IST" name="pdffilesync" finished-at="2025-02-13T14:28:30 IST" duration-ms="30273" status="PASS">
+        </test-method> <!-- TXTFileSync -->
+        <test-method signature="TXTContentFileSync()[pri:5, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:10:44 IST" name="TXTContentFileSync" finished-at="2025-06-05T19:11:01 IST" duration-ms="17453" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- pdffilesync -->
-        <test-method signature="docfilesync()[pri:6, instance:com.test.Botlist@17f9d882]" started-at="2025-02-13T14:28:30 IST" name="docfilesync" finished-at="2025-02-13T14:28:56 IST" duration-ms="25894" status="PASS">
+        </test-method> <!-- TXTContentFileSync -->
+        <test-method signature="PDFFileSync()[pri:6, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:11:01 IST" name="PDFFileSync" finished-at="2025-06-05T19:11:30 IST" duration-ms="28493" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- docfilesync -->
-        <test-method signature="chatbotspreview()[pri:7, instance:com.test.Botlist@17f9d882]" started-at="2025-02-13T14:28:56 IST" name="chatbotspreview" finished-at="2025-02-13T14:28:59 IST" duration-ms="3132" status="FAIL">
+        </test-method> <!-- PDFFileSync -->
+        <test-method signature="DOCFileSync()[pri:7, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:11:30 IST" name="DOCFileSync" finished-at="2025-06-05T19:11:55 IST" duration-ms="25858" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- DOCFileSync -->
+        <test-method signature="ChatBotsPreview()[pri:8, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:11:55 IST" name="ChatBotsPreview" finished-at="2025-06-05T19:12:23 IST" duration-ms="27646" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- ChatBotsPreview -->
+        <test-method signature="Settings()[pri:9, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:12:23 IST" name="Settings" finished-at="2025-06-05T19:12:27 IST" duration-ms="4110" status="FAIL">
           <exception class="org.openqa.selenium.ElementClickInterceptedException">
             <message>
-              <![CDATA[element click intercepted: Element <a class="menuli chatbotpreview" href="https://buildchatbot.ai/chatbots/preview">...</a> is not clickable at point (488, 10). Other element would receive the click: <a class="nav-link" href="https://buildchatbot.ai/integrations">...</a>
-  (Session info: chrome=133.0.6943.59)
+              <![CDATA[element click intercepted: Element <a class="menuli" href="https://buildchatbot.ai/chatbots/.../?chat_bot=e7a047a9-7973-47b4-9881-7b6a5b31389c">Settings</a> is not clickable at point (638, 67). Other element would receive the click: <nav class="navbar navbar-expand-lg">...</nav>
+  (Session info: chrome=137.0.7151.55)
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2cf740f5853c082c557c2afda489c6ce, clickElement {id=f.6D3CA618F8F066A27563827ADD7DBCF0.d.9EFC95C0ED511BDDAB4B263987AAD4BA.e.3614}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60041/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2cf740f5853c082c557c2afda489c6ce)] -> xpath: //*[@id='page']/section/div[2]/div/div/div/div/div[1]/ul/li[2]/a]
-Session ID: 2cf740f5853c082c557c2afda489c6ce]]>
+Command: [59c1d1db63d7752e69535c11ce10c01d, clickElement {id=f.9E414023204F3A8670A93959FF98D363.d.92DFE2E3D710ED391FAF63ED457BCDA4.e.5416}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49972/devtoo..., se:cdpVersion: 137.0.7151.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (59c1d1db63d7752e69535c11ce10c01d)] -> xpath: //*[@id='page']/section/div[2]/div/div/div/div/div[1]/ul/li[3]/a]
+Session ID: 59c1d1db63d7752e69535c11ce10c01d]]>
             </message>
             <full-stacktrace>
-              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="menuli chatbotpreview" href="https://buildchatbot.ai/chatbots/preview">...</a> is not clickable at point (488, 10). Other element would receive the click: <a class="nav-link" href="https://buildchatbot.ai/integrations">...</a>
-  (Session info: chrome=133.0.6943.59)
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a class="menuli" href="https://buildchatbot.ai/chatbots/.../?chat_bot=e7a047a9-7973-47b4-9881-7b6a5b31389c">Settings</a> is not clickable at point (638, 67). Other element would receive the click: <nav class="navbar navbar-expand-lg">...</nav>
+  (Session info: chrome=137.0.7151.55)
 Build info: version: '4.19.1', revision: 'abe0ee07dc'
 System info: os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '17.0.3'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [2cf740f5853c082c557c2afda489c6ce, clickElement {id=f.6D3CA618F8F066A27563827ADD7DBCF0.d.9EFC95C0ED511BDDAB4B263987AAD4BA.e.3614}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.59, chrome: {chromedriverVersion: 133.0.6943.98 (da53563ceb66..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:60041}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:60041/devtoo..., se:cdpVersion: 133.0.6943.59, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Element: [[ChromeDriver: chrome on windows (2cf740f5853c082c557c2afda489c6ce)] -> xpath: //*[@id='page']/section/div[2]/div/div/div/div/div[1]/ul/li[2]/a]
-Session ID: 2cf740f5853c082c557c2afda489c6ce
+Command: [59c1d1db63d7752e69535c11ce10c01d, clickElement {id=f.9E414023204F3A8670A93959FF98D363.d.92DFE2E3D710ED391FAF63ED457BCDA4.e.5416}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49972/devtoo..., se:cdpVersion: 137.0.7151.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (59c1d1db63d7752e69535c11ce10c01d)] -> xpath: //*[@id='page']/section/div[2]/div/div/div/div/div[1]/ul/li[3]/a]
+Session ID: 59c1d1db63d7752e69535c11ce10c01d
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -72,9 +80,9 @@ at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverComman
 at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
 at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
 at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
-at org.bcb.pageobjectclass.Botlist_Pageclass.click(Botlist_Pageclass.java:101)
-at org.bcb.pageobjectclass.Botlist_Pageclass.chatbotpreview(Botlist_Pageclass.java:331)
-at com.test.Botlist.chatbotspreview(Botlist.java:223)
+at org.bcb.pageobjectclass.Botlist_Pageclass.click(Botlist_Pageclass.java:112)
+at org.bcb.pageobjectclass.Botlist_Pageclass.settingssave(Botlist_Pageclass.java:364)
+at com.test.Botlist.Settings(Botlist.java:272)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -108,62 +116,62 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- chatbotspreview -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.test.Botlist@17f9d882]" started-at="2025-02-13T14:28:59 IST" name="quit" finished-at="2025-02-13T14:29:00 IST" duration-ms="1268" status="PASS">
+        </test-method> <!-- Settings -->
+        <test-method signature="WidgetDownload()[pri:10, instance:com.test.Botlist@17f9d882]" started-at="2025-06-05T19:12:27 IST" name="WidgetDownload" finished-at="2025-06-05T19:12:45 IST" duration-ms="17312" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- quit -->
+        </test-method> <!-- WidgetDownload -->
       </class> <!-- com.test.Botlist -->
       <class name="com.test.Login">
-        <test-method is-config="true" signature="browser_launch()[pri:0, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:22:52 IST" name="browser_launch" finished-at="2025-02-13T14:23:13 IST" duration-ms="21757" status="PASS">
+        <test-method is-config="true" signature="browser_launch()[pri:0, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:05:06 IST" name="browser_launch" finished-at="2025-06-05T19:05:41 IST" duration-ms="35204" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- browser_launch -->
-        <test-method signature="RegisterInvalidEmail()[pri:1, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:23:13 IST" name="RegisterInvalidEmail" finished-at="2025-02-13T14:23:17 IST" duration-ms="3288" status="PASS">
+        <test-method signature="RegisterInvalidEmail()[pri:1, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:05:41 IST" name="RegisterInvalidEmail" finished-at="2025-06-05T19:05:44 IST" duration-ms="3023" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterInvalidEmail -->
-        <test-method signature="RegisterPasswordEmpty()[pri:2, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:23:17 IST" name="RegisterPasswordEmpty" finished-at="2025-02-13T14:23:18 IST" duration-ms="1508" status="PASS">
+        <test-method signature="RegisterPasswordEmpty()[pri:2, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:05:44 IST" name="RegisterPasswordEmpty" finished-at="2025-06-05T19:05:46 IST" duration-ms="2106" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterPasswordEmpty -->
-        <test-method signature="RegisterSuccess()[pri:3, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:23:18 IST" name="RegisterSuccess" finished-at="2025-02-13T14:23:44 IST" duration-ms="25808" status="PASS">
+        <test-method signature="RegisterSuccess()[pri:3, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:05:46 IST" name="RegisterSuccess" finished-at="2025-06-05T19:06:09 IST" duration-ms="23482" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- RegisterSuccess -->
-        <test-method signature="LoginInvalidEmail()[pri:4, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:23:44 IST" name="LoginInvalidEmail" finished-at="2025-02-13T14:23:46 IST" duration-ms="1972" status="PASS">
+        <test-method signature="LoginInvalidEmail()[pri:4, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:06:09 IST" name="LoginInvalidEmail" finished-at="2025-06-05T19:06:13 IST" duration-ms="3072" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginInvalidEmail -->
-        <test-method signature="LoginInvalidcredentials()[pri:5, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:23:46 IST" name="LoginInvalidcredentials" finished-at="2025-02-13T14:24:27 IST" duration-ms="40880" status="PASS">
+        <test-method signature="LoginInvalidcredentials()[pri:5, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:06:13 IST" name="LoginInvalidcredentials" finished-at="2025-06-05T19:06:53 IST" duration-ms="40785" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginInvalidcredentials -->
-        <test-method signature="LoginSuccess()[pri:6, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:24:27 IST" name="LoginSuccess" finished-at="2025-02-13T14:24:32 IST" duration-ms="5467" status="PASS">
+        <test-method signature="LoginSuccess()[pri:6, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:06:53 IST" name="LoginSuccess" finished-at="2025-06-05T19:07:00 IST" duration-ms="6157" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginSuccess -->
-        <test-method signature="BotEmptyFieldValidation()[pri:7, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:24:32 IST" name="BotEmptyFieldValidation" finished-at="2025-02-13T14:24:41 IST" duration-ms="9295" status="PASS">
+        <test-method signature="BotEmptyFieldValidation()[pri:7, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:07:00 IST" name="BotEmptyFieldValidation" finished-at="2025-06-05T19:07:13 IST" duration-ms="13230" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BotEmptyFieldValidation -->
-        <test-method signature="BotCreateSuccess()[pri:8, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:24:41 IST" name="BotCreateSuccess" finished-at="2025-02-13T14:25:24 IST" duration-ms="42915" status="PASS">
+        <test-method signature="BotCreateSuccess()[pri:8, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:07:13 IST" name="BotCreateSuccess" finished-at="2025-06-05T19:07:55 IST" duration-ms="42606" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BotCreateSuccess -->
-        <test-method signature="BotUpdateEmptyValidation()[pri:9, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:25:24 IST" name="BotUpdateEmptyValidation" finished-at="2025-02-13T14:25:32 IST" duration-ms="7377" status="PASS">
+        <test-method signature="BotUpdateEmptyValidation()[pri:9, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:07:55 IST" name="BotUpdateEmptyValidation" finished-at="2025-06-05T19:08:03 IST" duration-ms="7306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BotUpdateEmptyValidation -->
-        <test-method signature="BotUpdateSuccess()[pri:10, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:25:32 IST" name="BotUpdateSuccess" finished-at="2025-02-13T14:26:15 IST" duration-ms="43039" status="PASS">
+        <test-method signature="BotUpdateSuccess()[pri:10, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:08:03 IST" name="BotUpdateSuccess" finished-at="2025-06-05T19:08:45 IST" duration-ms="42561" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- BotUpdateSuccess -->
-        <test-method signature="Botdelete()[pri:11, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:26:15 IST" name="Botdelete" finished-at="2025-02-13T14:26:19 IST" duration-ms="3802" status="PASS">
+        <test-method signature="BotDelete()[pri:11, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:08:45 IST" name="BotDelete" finished-at="2025-06-05T19:08:49 IST" duration-ms="4236" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- Botdelete -->
-        <test-method is-config="true" signature="quit()[pri:0, instance:com.test.Login@53fb3dab]" started-at="2025-02-13T14:26:19 IST" name="quit" finished-at="2025-02-13T14:26:21 IST" duration-ms="2219" status="PASS">
+        </test-method> <!-- BotDelete -->
+        <test-method is-config="true" signature="quit()[pri:0, instance:com.test.Login@53fb3dab]" started-at="2025-06-05T19:08:49 IST" name="quit" finished-at="2025-06-05T19:08:52 IST" duration-ms="2484" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quit -->

@@ -278,7 +278,7 @@ public class Login {
 	
 	//Bot delete
 	@Test(priority = 11)
-	private void Botdelete() throws InterruptedException, IOException {
+	private void BotDelete() throws InterruptedException, IOException {
 		testcase = extentReports.createTest("Check whether the chatbot was Deleted successfully");
 		Login_Pageclass deletebot = PageFactory.initElements(driver, Login_Pageclass.class);
 		String Deletebot = deletebot.botdelete();
