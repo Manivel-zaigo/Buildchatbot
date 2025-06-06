@@ -1,0 +1,55 @@
+Admin - not be able to create the provider user
+Provider - able to create, edit, delete, view the provider user
+Provider user - able to edit, view the community
+
+
+1. Community Create -> Field Validation & Mandatory Fieldy Validations. Assign communities.
+2. Assign Communities -> Active Communities for that provider only should be shown.
+3. Inactive communities for that user, communities from other providers should  not be listed
+4. After Creation -> community user should be shown in the list. Mail should be triggered to the community user. The Community user should be successfully logged in.
+5. List View -> All Column headers and its value, search box, status filter, Active & Inactive.
+6. List -> Actions [View & Edit]
+7. Community User Login->Change Password, View & Edit Profile
+
+1. Community User Login-> Menu options -> Except claimed commniteis & settings all other menu will be shown.
+2. Community User Login -> Community Menu option -> only View & Edit option.
+3. Video Upload - Only assigned communities should be shown. Assign videos and check the videos in web application.
+4. Statistics, consumer review , platform review, lead center, communication, notification -> only assigned communities records should be shown.
+
+
+
+
+
+-clarifications-
+
+Provider Dashboard - Consumer review settings - what is ratings change 
+Rename User Menu to Community User for better understanding
+Community User Login -> Only subscribeded communities will be shown or not?
+In community user list page, assigned community count showing or not?
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1. One Community will be mapped to one community user / it will be mapped to multiple community users.
+2. Active Community is assigned one community user. When provider update the specific community as Inactive, what will be the funcitonality.
+Subscribe plan is being implemented based on community - Whether Non subscribed communities will be shown.
+
+1. Dashboard menu for community user login - clarification
+2. Subscribe plan is being implemented based on community - Whether Non subscribed communities will be shown.

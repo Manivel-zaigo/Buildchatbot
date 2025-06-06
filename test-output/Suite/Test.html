@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>20/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 08 11:57:51 IST 2024</td>
+<td>Started on:</td><td>Thu Jun 05 19:05:06 IST 2025</td>
 </tr>
-<tr><td>Total time:</td><td>35 seconds (35989 ms)</td>
+<tr><td>Total time:</td><td>458 seconds (458912 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.Login_Page.login()'><b>login</b><br>Test class: com.test.Login_Page</td>
-<td><div><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=123.0.6312.106)
+<td title='com.test.Botlist.Settings()'><b>Settings</b><br>Test class: com.test.Botlist</td>
+<td><div><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;menuli&quot; href=&quot;https://buildchatbot.ai/chatbots/.../?chat_bot=e7a047a9-7973-47b4-9881-7b6a5b31389c&quot;&gt;Settings&lt;/a&gt; is not clickable at point (638, 67). Other element would receive the click: &lt;nav class=&quot;navbar navbar-expand-lg&quot;&gt;...&lt;/nav&gt;
+  (Session info: chrome=137.0.7151.55)
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [730497fd01b983a9d7a87d6e6dc22f62, findElement {value=//*[contains(text(),&apos;Create Your Chatbot&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49689/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 730497fd01b983a9d7a87d6e6dc22f62
+Command: [59c1d1db63d7752e69535c11ce10c01d, clickElement {id=f.9E414023204F3A8670A93959FF98D363.d.92DFE2E3D710ED391FAF63ED457BCDA4.e.5416}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49972/devtoo..., se:cdpVersion: 137.0.7151.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (59c1d1db63d7752e69535c11ce10c01d)] -&gt; xpath: //*[@id=&apos;page&apos;]/section/div[2]/div/div/div/div/div[1]/ul/li[3]/a]
+Session ID: 59c1d1db63d7752e69535c11ce10c01d
 	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
 	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
@@ -93,23 +93,22 @@ Session ID: 730497fd01b983a9d7a87d6e6dc22f62
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.bcb.pageobjectclass.loginpage_pageclass.setcredentials(loginpage_pageclass.java:30)
-	at com.test.Login_Page.login(Login_Page.java:41)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.click(Botlist_Pageclass.java:112)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.settingssave(Botlist_Pageclass.java:364)
+	at com.test.Botlist.Settings(Botlist.java:272)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace540206885", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace540206885'><pre>org.openqa.selenium.NoSuchWindowException: no such window: target window already closed
-from unknown error: web view not found
-  (Session info: chrome=123.0.6312.106)
+... Removed 32 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1191049963", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1191049963'><pre>org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;menuli&quot; href=&quot;https://buildchatbot.ai/chatbots/.../?chat_bot=e7a047a9-7973-47b4-9881-7b6a5b31389c&quot;&gt;Settings&lt;/a&gt; is not clickable at point (638, 67). Other element would receive the click: &lt;nav class=&quot;navbar navbar-expand-lg&quot;&gt;...&lt;/nav&gt;
+  (Session info: chrome=137.0.7151.55)
 Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
 System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [730497fd01b983a9d7a87d6e6dc22f62, findElement {value=//*[contains(text(),&apos;Create Your Chatbot&apos;)], using=xpath}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 123.0.6312.106, chrome: {chromedriverVersion: 123.0.6312.105 (399174dbe6e..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49689}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49689/devtoo..., se:cdpVersion: 123.0.6312.106, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 730497fd01b983a9d7a87d6e6dc22f62
+Command: [59c1d1db63d7752e69535c11ce10c01d, clickElement {id=f.9E414023204F3A8670A93959FF98D363.d.92DFE2E3D710ED391FAF63ED457BCDA4.e.5416}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49972/devtoo..., se:cdpVersion: 137.0.7151.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (59c1d1db63d7752e69535c11ce10c01d)] -&gt; xpath: //*[@id=&apos;page&apos;]/section/div[2]/div/div/div/div/div[1]/ul/li[3]/a]
+Session ID: 59c1d1db63d7752e69535c11ce10c01d
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -122,12 +121,11 @@ Session ID: 730497fd01b983a9d7a87d6e6dc22f62
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
-	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
-	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
-	at org.bcb.pageobjectclass.loginpage_pageclass.setcredentials(loginpage_pageclass.java:30)
-	at com.test.Login_Page.login(Login_Page.java:41)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.click(Botlist_Pageclass.java:112)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.settingssave(Botlist_Pageclass.java:364)
+	at com.test.Botlist.Settings(Botlist.java:272)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -157,8 +155,8 @@ Session ID: 730497fd01b983a9d7a87d6e6dc22f62
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>10</td>
-<td>com.test.Login_Page@6bbe85a8</td></tr>
+<td>4</td>
+<td>com.test.Botlist@17f9d882</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -169,10 +167,105 @@ Session ID: 730497fd01b983a9d7a87d6e6dc22f62
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.test.Login_Page.login2()'><b>login2</b><br>Test class: com.test.Login_Page</td>
+<td title='com.test.Botlist.TXTFileSync()'><b>TXTFileSync</b><br>Test class: com.test.Botlist</td>
 <td></td>
-<td>10</td>
-<td>com.test.Login_Page@6bbe85a8</td></tr>
+<td>19</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Login.RegisterInvalidEmail()'><b>RegisterInvalidEmail</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>3</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.BotCreateSuccess()'><b>BotCreateSuccess</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>42</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Botlist.LoginSuccess()'><b>LoginSuccess</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>7</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Botlist.DOCFileSync()'><b>DOCFileSync</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>25</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Botlist.PDFFileSync()'><b>PDFFileSync</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>28</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Botlist.WidgetDownload()'><b>WidgetDownload</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>17</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Botlist.BotCreateSuccess()'><b>BotCreateSuccess</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>41</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Botlist.FileInvalid()'><b>FileInvalid</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>17</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Botlist.ChatBotsPreview()'><b>ChatBotsPreview</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>27</td>
+<td>com.test.Botlist@17f9d882</td></tr>
+<tr>
+<td title='com.test.Login.BotUpdateSuccess()'><b>BotUpdateSuccess</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>42</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.LoginSuccess()'><b>LoginSuccess</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>6</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.BotDelete()'><b>BotDelete</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>4</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.RegisterPasswordEmpty()'><b>RegisterPasswordEmpty</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>2</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.LoginInvalidcredentials()'><b>LoginInvalidcredentials</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>40</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.RegisterSuccess()'><b>RegisterSuccess</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>23</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.BotUpdateEmptyValidation()'><b>BotUpdateEmptyValidation</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>7</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.LoginInvalidEmail()'><b>LoginInvalidEmail</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>3</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Login.BotEmptyFieldValidation()'><b>BotEmptyFieldValidation</b><br>Test class: com.test.Login</td>
+<td></td>
+<td>13</td>
+<td>com.test.Login@53fb3dab</td></tr>
+<tr>
+<td title='com.test.Botlist.TXTContentFileSync()'><b>TXTContentFileSync</b><br>Test class: com.test.Botlist</td>
+<td></td>
+<td>17</td>
+<td>com.test.Botlist@17f9d882</td></tr>
 </table><p>
 </body>
 </html>

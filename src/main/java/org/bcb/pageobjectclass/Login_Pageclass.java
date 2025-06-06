@@ -55,10 +55,23 @@ public class Login_Pageclass {
 	By Wrongpwd = By.xpath("//*[text()='Invalid Credentials.']");
 
 	// Bot creation
+	By closetips = By.xpath("/html/body/div[2]/button");
 	By botfield = By.xpath("//*[@id='chatName']");
 	By createbotbtn = By.id("createbot");
 	By emptyfield = By.xpath("//*[text()='Please Enter ChatBot Name.']");
 	By bothome = By.xpath("//*[@id='textInputP']");
+
+	// Bot update
+	By closetipuploads = By.xpath("/html/body/div[4]/button");
+	By Boteditsymbol = By.xpath("//*[@id='editButton']");
+	By Edittext = By.xpath("//*[@id='textInput']");
+	By BotUpdatebutton = By.xpath("//*[@id='saveButton']");
+	By BotEditempty = By.xpath("//*[@id='toast-container']/div/div");
+//	By BotUpdatesuccess = By.xpath("//*[text()='Bot Name Updated Successfully.']");
+
+	// Bot delete
+	By DeleteOption = By.xpath("//*[@id='chat_full_delete']");
+	By DeleteConfirm = By.xpath("//*[text()=' Delete ']");
 
 	// Inputs removed from the fields
 	private void clearField(By element) {
@@ -70,19 +83,19 @@ public class Login_Pageclass {
 	private void click(By element) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		wait.until(ExpectedConditions.visibilityOfElementLocated(element)).click();
-		
+
 //		 Actions actions = new Actions(driver);      
 //	        // Perform the click action using the actions object
 //	        actions.click(element).build().perform();
 	}
-	
+
 	private void click(WebElement element) {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(40));
 		wait.until(ExpectedConditions.visibilityOf(element));
-		
-		 Actions actions = new Actions(driver);      
-	        // Perform the click action using the actions object
-	        actions.click(element).build().perform();
+
+		Actions actions = new Actions(driver);
+		// Perform the click action using the actions object
+		actions.click(element).build().perform();
 	}
 
 	private void EnterText(By element, String value) {
@@ -154,10 +167,10 @@ public class Login_Pageclass {
 	public String setcredentials() throws InterruptedException {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		driver.get(driver.getCurrentUrl());
-		this.EnterText(Email, "joseph@mailinator.com");
+		this.EnterText(Email, "berlin@zaigoinfotech.com");
 		this.EnterText(Password, "Password@123");
 		this.click(Login);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(Dashboard));
 		String dashboard = driver.findElement(Dashboard).getText();
 		return dashboard;
@@ -166,8 +179,8 @@ public class Login_Pageclass {
 	// Invalid email in Login page
 	public String invalidemail() throws InterruptedException {
 		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
-		driver.get("https://beta.buildchatbot.ai/login/");
-		this.EnterText(Email, "joseph@@mailinator.com");
+		driver.get("https://buildchatbot.ai/login/");
+		this.EnterText(Email, "berlin@@zaigoinfotech.com");
 		this.EnterText(Password, "Password@123");
 		this.click(Login);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(Invalidemail));
@@ -179,8 +192,8 @@ public class Login_Pageclass {
 
 	// Invalid password in login page
 	public String invalidpwd() throws InterruptedException {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(50));
-		this.EnterText(Email, "joseph@mailinator.com");
+		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		this.EnterText(Email, "berlin@zaigoinfotech.com");
 		this.EnterText(Password, "Pass");
 //		this.click(Login);
 
@@ -203,10 +216,13 @@ public class Login_Pageclass {
 
 	// Bot field empty validation
 	public String botempty() throws InterruptedException {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		Thread.sleep(3000);
+		this.click(closetips);
+		Thread.sleep(3000);
 		this.EnterText(botfield, "");
 		this.click(createbotbtn);
-		Thread.sleep(5000);
+		Thread.sleep(3000);
 		wait.until(ExpectedConditions.visibilityOfElementLocated(emptyfield));
 		String botempty = driver.findElement(emptyfield).getText();
 		return botempty;
@@ -214,9 +230,9 @@ public class Login_Pageclass {
 
 	// Bot creation success
 	public String botcreate() throws InterruptedException {
-		wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
 		this.EnterText(botfield, "Testbot");
-		//this.click(createbotbtn);
+		// this.click(createbotbtn);
 		Thread.sleep(2000);
 		boolean condition = false;
 		if (!this.conditionChecking1()) {
@@ -231,6 +247,54 @@ public class Login_Pageclass {
 		String bothomepage = driver.findElement(bothome).getText();
 		return bothomepage;
 
+	}
+
+	// Update Bot field empty validation
+	public String boteditempty() throws InterruptedException {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		Thread.sleep(2000);
+		this.click(closetipuploads);
+		Thread.sleep(2000);
+		this.click(Boteditsymbol);
+		this.clearField(Edittext);
+		this.click(BotUpdatebutton);
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(BotEditempty));
+		String botempty = driver.findElement(BotEditempty).getText();
+		return botempty;
+	}
+
+	// Bot update success
+	public String botupdate() throws InterruptedException {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+//		this.click(Boteditsymbol);
+//		this.clearField(Edittext);
+		this.EnterText(Edittext, "Samplebot");
+		Thread.sleep(2000);
+		boolean condition = false;
+		if (!this.conditionChecking1()) {
+			do {
+				this.click(BotUpdatebutton);
+				if (this.conditionChecking1()) {
+					condition = false;
+				}
+			} while (condition);
+		}
+
+		String botupdatesuccess = driver.findElement(bothome).getText();
+		return botupdatesuccess;
+
+	}
+
+	// Bot Deletion
+	public String botdelete() throws InterruptedException {
+		wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		this.click(DeleteOption);
+		this.click(DeleteConfirm);
+		Thread.sleep(3000);
+		wait.until(ExpectedConditions.visibilityOfElementLocated(Dashboard));
+		String botdelete = driver.findElement(Dashboard).getText();
+		return botdelete;
 	}
 
 }

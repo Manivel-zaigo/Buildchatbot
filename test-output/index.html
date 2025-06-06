@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,8 +38,8 @@
       <div class="suite">
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
-            <a href="#" panel-name="suite-Default_suite" class="navigator-link">
-              <span class="suite-name border-passed">Default suite</span>
+            <a href="#" panel-name="suite-Suite" class="navigator-link">
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,37 +49,37 @@
             <div class="suite-section-content">
               <ul>
                 <li>
-                  <a href="#" panel-name="test-xml-Default_suite" class="navigator-link ">
-                    <span>C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1941117577\testng-customsuite.xml</span>
+                  <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
+                    <span>C:\Users\Admin\eclipse-workspace\Build_Chatbot\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="testlist-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="testlist-Suite" class="navigator-link ">
                     <span class="test-stats">1 test</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="group-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="group-Suite" class="navigator-link ">
                     <span>0 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="times-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="times-Suite" class="navigator-link ">
                     <span>Times</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="reporter-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="reporter-Suite" class="navigator-link ">
                     <span>Reporter output</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="ignored-methods-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="ignored-methods-Suite" class="navigator-link ">
                     <span>Ignored methods</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
-                  <a href="#" panel-name="chronological-Default_suite" class="navigator-link ">
+                  <a href="#" panel-name="chronological-Suite" class="navigator-link ">
                     <span>Chronological view</span>
                   </a> <!-- navigator-link  -->
                 </li>
@@ -92,56 +92,130 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">8 methods,   8 passed</span>
+                    <span class="method-stats">21 methods, 1 failed,   20 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="Settings">Settings</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
                     <span class="show-or-hide-methods passed">
-                      <a href="#" panel-name="suite-Default_suite" class="hide-methods passed suite-Default_suite"> (hide)</a> <!-- hide-methods passed suite-Default_suite -->
-                      <a href="#" panel-name="suite-Default_suite" class="show-methods passed suite-Default_suite"> (show)</a> <!-- show-methods passed suite-Default_suite -->
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
                     </span>
-                    <div class="method-list-content passed suite-Default_suite">
+                    <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Login" class="method navigator-link" hash-for-method="BotCreateSuccess">BotCreateSuccess</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="BotCreateSuccess">BotCreateSuccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Login" class="method navigator-link" hash-for-method="BotEmptyFieldValidation">BotEmptyFieldValidation</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="BotCreateSuccess">BotCreateSuccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Login" class="method navigator-link" hash-for-method="LoginInvalidEmail">LoginInvalidEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="BotDelete">BotDelete</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Login" class="method navigator-link" hash-for-method="LoginInvalidcredentials">LoginInvalidcredentials</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="BotEmptyFieldValidation">BotEmptyFieldValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Login" class="method navigator-link" hash-for-method="LoginSuccess">LoginSuccess</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="BotUpdateEmptyValidation">BotUpdateEmptyValidation</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Login" class="method navigator-link" hash-for-method="RegisterInvalidEmail">RegisterInvalidEmail</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="BotUpdateSuccess">BotUpdateSuccess</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Login" class="method navigator-link" hash-for-method="RegisterPasswordEmpty">RegisterPasswordEmpty</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="ChatBotsPreview">ChatBotsPreview</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Default_suite" title="com.test.Login" class="method navigator-link" hash-for-method="RegisterSuccess">RegisterSuccess</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="DOCFileSync">DOCFileSync</a> <!-- method navigator-link -->
                       </span>
                       <br/>
-                    </div> <!-- method-list-content passed suite-Default_suite -->
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="FileInvalid">FileInvalid</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="LoginInvalidEmail">LoginInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="LoginInvalidcredentials">LoginInvalidcredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="LoginSuccess">LoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="LoginSuccess">LoginSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="PDFFileSync">PDFFileSync</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="RegisterInvalidEmail">RegisterInvalidEmail</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="RegisterPasswordEmpty">RegisterPasswordEmpty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Login" class="method navigator-link" hash-for-method="RegisterSuccess">RegisterSuccess</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="TXTContentFileSync">TXTContentFileSync</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="TXTFileSync">TXTFileSync</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="com.test.Botlist" class="method navigator-link" hash-for-method="WidgetDownload">WidgetDownload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -152,8 +226,47 @@
     </div> <!-- navigator-root -->
     <div class="wrapper">
       <div class="main-panel-root">
-        <div panel-name="suite-Default_suite" class="panel Default_suite">
-          <div class="suite-Default_suite-class-passed">
+        <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.test.Botlist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Settings">
+                  </a> <!-- Settings -->
+                  <span class="method-name">Settings</span>
+                  <div class="stack-trace">org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element &lt;a class=&quot;menuli&quot; href=&quot;https://buildchatbot.ai/chatbots/.../?chat_bot=e7a047a9-7973-47b4-9881-7b6a5b31389c&quot;&gt;Settings&lt;/a&gt; is not clickable at point (638, 67). Other element would receive the click: &lt;nav class=&quot;navbar navbar-expand-lg&quot;&gt;...&lt;/nav&gt;
+  (Session info: chrome=137.0.7151.55)
+Build info: version: &apos;4.19.1&apos;, revision: &apos;abe0ee07dc&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;17.0.3&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [59c1d1db63d7752e69535c11ce10c01d, clickElement {id=f.9E414023204F3A8670A93959FF98D363.d.92DFE2E3D710ED391FAF63ED457BCDA4.e.5416}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 137.0.7151.55, chrome: {chromedriverVersion: 137.0.7151.68 (2989ffee9373..., userDataDir: C:\Users\Admin\AppData\Loca...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49972}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49972/devtoo..., se:cdpVersion: 137.0.7151.55, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on windows (59c1d1db63d7752e69535c11ce10c01d)] -&gt; xpath: //*[@id=&apos;page&apos;]/section/div[2]/div/div/div/div/div[1]/ul/li[3]/a]
+Session ID: 59c1d1db63d7752e69535c11ce10c01d
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+	at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.click(Botlist_Pageclass.java:112)
+	at org.bcb.pageobjectclass.Botlist_Pageclass.settingssave(Botlist_Pageclass.java:364)
+	at com.test.Botlist.Settings(Botlist.java:272)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
               <span class="class-name">com.test.Login</span>
@@ -168,9 +281,30 @@
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="BotDelete">
+                  </a> <!-- BotDelete -->
+                  <span class="method-name">BotDelete</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="BotEmptyFieldValidation">
                   </a> <!-- BotEmptyFieldValidation -->
                   <span class="method-name">BotEmptyFieldValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BotUpdateEmptyValidation">
+                  </a> <!-- BotUpdateEmptyValidation -->
+                  <span class="method-name">BotUpdateEmptyValidation</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="BotUpdateSuccess">
+                  </a> <!-- BotUpdateSuccess -->
+                  <span class="method-name">BotUpdateSuccess</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -216,117 +350,241 @@
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Default_suite-class-passed -->
-        </div> <!-- panel Default_suite -->
-        <div panel-name="test-xml-Default_suite" class="panel">
+          </div> <!-- suite-Suite-class-passed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.test.Botlist</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="BotCreateSuccess">
+                  </a> <!-- BotCreateSuccess -->
+                  <span class="method-name">BotCreateSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ChatBotsPreview">
+                  </a> <!-- ChatBotsPreview -->
+                  <span class="method-name">ChatBotsPreview</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="DOCFileSync">
+                  </a> <!-- DOCFileSync -->
+                  <span class="method-name">DOCFileSync</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="FileInvalid">
+                  </a> <!-- FileInvalid -->
+                  <span class="method-name">FileInvalid</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginSuccess">
+                  </a> <!-- LoginSuccess -->
+                  <span class="method-name">LoginSuccess</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="PDFFileSync">
+                  </a> <!-- PDFFileSync -->
+                  <span class="method-name">PDFFileSync</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TXTContentFileSync">
+                  </a> <!-- TXTContentFileSync -->
+                  <span class="method-name">TXTContentFileSync</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TXTFileSync">
+                  </a> <!-- TXTFileSync -->
+                  <span class="method-name">TXTFileSync</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="WidgetDownload">
+                  </a> <!-- WidgetDownload -->
+                  <span class="method-name">WidgetDownload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-passed -->
+        </div> <!-- panel Suite -->
+        <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Admin\AppData\Local\Temp\testng-eclipse-1941117577\testng-customsuite.xml</span>
+            <span class="header-content">C:\Users\Admin\eclipse-workspace\Build_Chatbot\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
-&lt;suite name=&quot;Default suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Default test&quot; verbose=&quot;2&quot;&gt;
+&lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.test.Login&quot;/&gt;
+      &lt;class name=&quot;com.test.Botlist&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Default test --&gt;
-&lt;/suite&gt; &lt;!-- Default suite --&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="testlist-Default_suite" class="panel">
+        <div panel-name="testlist-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Tests for Default suite</span>
+            <span class="header-content">Tests for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Default test (1 class)</span>
+                <span class="test-name">Test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="group-Default_suite" class="panel">
+        <div panel-name="group-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Groups for Default suite</span>
+            <span class="header-content">Groups for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="times-Default_suite" class="panel">
+        <div panel-name="times-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Times for Default suite</span>
+            <span class="header-content">Times for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="times-div">
               <script type="text/javascript">
-suiteTableInitFunctions.push('tableData_Default_suite');
-function tableData_Default_suite() {
+suiteTableInitFunctions.push('tableData_Suite');
+function tableData_Suite() {
 var data = new google.visualization.DataTable();
 data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(8);
+data.addRows(21);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'BotCreateSuccess')
 data.setCell(0, 2, 'com.test.Login')
-data.setCell(0, 3, 42844);
+data.setCell(0, 3, 42606);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'LoginInvalidcredentials')
+data.setCell(1, 1, 'BotUpdateSuccess')
 data.setCell(1, 2, 'com.test.Login')
-data.setCell(1, 3, 41645);
+data.setCell(1, 3, 42561);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'RegisterSuccess')
-data.setCell(2, 2, 'com.test.Login')
-data.setCell(2, 3, 23198);
+data.setCell(2, 1, 'BotCreateSuccess')
+data.setCell(2, 2, 'com.test.Botlist')
+data.setCell(2, 3, 41473);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LoginSuccess')
+data.setCell(3, 1, 'LoginInvalidcredentials')
 data.setCell(3, 2, 'com.test.Login')
-data.setCell(3, 3, 6486);
+data.setCell(3, 3, 40785);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'BotEmptyFieldValidation')
-data.setCell(4, 2, 'com.test.Login')
-data.setCell(4, 3, 5452);
+data.setCell(4, 1, 'PDFFileSync')
+data.setCell(4, 2, 'com.test.Botlist')
+data.setCell(4, 3, 28493);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'RegisterInvalidEmail')
-data.setCell(5, 2, 'com.test.Login')
-data.setCell(5, 3, 2578);
+data.setCell(5, 1, 'ChatBotsPreview')
+data.setCell(5, 2, 'com.test.Botlist')
+data.setCell(5, 3, 27646);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'LoginInvalidEmail')
-data.setCell(6, 2, 'com.test.Login')
-data.setCell(6, 3, 1268);
+data.setCell(6, 1, 'DOCFileSync')
+data.setCell(6, 2, 'com.test.Botlist')
+data.setCell(6, 3, 25858);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'RegisterPasswordEmpty')
+data.setCell(7, 1, 'RegisterSuccess')
 data.setCell(7, 2, 'com.test.Login')
-data.setCell(7, 3, 970);
-window.suiteTableData['Default_suite']= { tableData: data, tableDiv: 'times-div-Default_suite'}
+data.setCell(7, 3, 23482);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'TXTFileSync')
+data.setCell(8, 2, 'com.test.Botlist')
+data.setCell(8, 3, 19953);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'FileInvalid')
+data.setCell(9, 2, 'com.test.Botlist')
+data.setCell(9, 3, 17803);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'TXTContentFileSync')
+data.setCell(10, 2, 'com.test.Botlist')
+data.setCell(10, 3, 17453);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'WidgetDownload')
+data.setCell(11, 2, 'com.test.Botlist')
+data.setCell(11, 3, 17312);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'BotEmptyFieldValidation')
+data.setCell(12, 2, 'com.test.Login')
+data.setCell(12, 3, 13230);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'BotUpdateEmptyValidation')
+data.setCell(13, 2, 'com.test.Login')
+data.setCell(13, 3, 7306);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'LoginSuccess')
+data.setCell(14, 2, 'com.test.Botlist')
+data.setCell(14, 3, 7156);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'LoginSuccess')
+data.setCell(15, 2, 'com.test.Login')
+data.setCell(15, 3, 6157);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'BotDelete')
+data.setCell(16, 2, 'com.test.Login')
+data.setCell(16, 3, 4236);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'Settings')
+data.setCell(17, 2, 'com.test.Botlist')
+data.setCell(17, 3, 4110);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'LoginInvalidEmail')
+data.setCell(18, 2, 'com.test.Login')
+data.setCell(18, 3, 3072);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'RegisterInvalidEmail')
+data.setCell(19, 2, 'com.test.Login')
+data.setCell(19, 3, 3023);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'RegisterPasswordEmpty')
+data.setCell(20, 2, 'com.test.Login')
+data.setCell(20, 3, 2106);
+window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 2 minutes</span>
-              <div id="times-div-Default_suite">
-              </div> <!-- times-div-Default_suite -->
+              <span class="suite-total-time">Total running time: 6 minutes</span>
+              <div id="times-div-Suite">
+              </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="reporter-Default_suite" class="panel">
+        <div panel-name="reporter-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">Reporter output for Default suite</span>
+            <span class="header-content">Reporter output for Suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="ignored-methods-Default_suite" class="panel">
+        <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">0 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
-        <div panel-name="chronological-Default_suite" class="panel">
+        <div panel-name="chronological-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
             <span class="header-content">Methods in chronological order</span>
           </div> <!-- main-panel-header rounded-window-top -->
@@ -339,40 +597,101 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">RegisterInvalidEmail</span>
-                <span class="method-start">7924 ms</span>
+                <span class="method-start">35223 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RegisterPasswordEmpty</span>
-                <span class="method-start">10506 ms</span>
+                <span class="method-start">38249 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">RegisterSuccess</span>
-                <span class="method-start">11477 ms</span>
+                <span class="method-start">40356 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginInvalidEmail</span>
-                <span class="method-start">34680 ms</span>
+                <span class="method-start">63839 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginInvalidcredentials</span>
-                <span class="method-start">35949 ms</span>
+                <span class="method-start">66912 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginSuccess</span>
-                <span class="method-start">77597 ms</span>
+                <span class="method-start">107698 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BotEmptyFieldValidation</span>
-                <span class="method-start">84088 ms</span>
+                <span class="method-start">113856 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">BotCreateSuccess</span>
-                <span class="method-start">89543 ms</span>
+                <span class="method-start">127087 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BotUpdateEmptyValidation</span>
+                <span class="method-start">169695 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BotUpdateSuccess</span>
+                <span class="method-start">177002 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BotDelete</span>
+                <span class="method-start">219564 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quit</span>
-                <span class="method-start">132392 ms</span>
+                <span class="method-start">223801 ms</span>
               </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.test.Botlist</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">browser_launch</span>
+                <span class="method-start">226286 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">LoginSuccess</span>
+                <span class="method-start">251611 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">BotCreateSuccess</span>
+                <span class="method-start">258768 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">FileInvalid</span>
+                <span class="method-start">300242 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TXTFileSync</span>
+                <span class="method-start">318046 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">TXTContentFileSync</span>
+                <span class="method-start">338000 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">PDFFileSync</span>
+                <span class="method-start">355454 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">DOCFileSync</span>
+                <span class="method-start">383948 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ChatBotsPreview</span>
+                <span class="method-start">409807 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Settings</span>
+                <span class="method-start">437454 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">WidgetDownload</span>
+                <span class="method-start">441567 ms</span>
+              </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->
